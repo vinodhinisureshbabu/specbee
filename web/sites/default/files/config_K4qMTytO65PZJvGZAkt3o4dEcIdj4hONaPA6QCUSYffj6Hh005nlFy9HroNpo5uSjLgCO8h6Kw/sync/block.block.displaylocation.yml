@@ -1,0 +1,20 @@
+uuid: 20c3ea7b-89d1-47d3-8d1b-9477fee23b37
+langcode: en
+status: true
+dependencies:
+  module:
+    - location
+  theme:
+    - bartik
+id: displaylocation
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: display_location
+settings:
+  id: display_location
+  label: 'Display location'
+  provider: location
+  label_display: visible
+visibility: {  }
