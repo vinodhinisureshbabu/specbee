@@ -1,0 +1,9 @@
+location.location_details:
+  path: '/admin/config/location/locationdetails'
+  defaults:
+    _form: '\Drupal\location\Form\LocationDetails'
+    _title: 'LocationDetails'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

@@ -1,0 +1,4 @@
+services:
+  location.current_time_based_on_timezone:
+    class: Drupal\location\CurrentTimebasedonTimezone
+    arguments: []

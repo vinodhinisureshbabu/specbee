@@ -1,0 +1,6 @@
+location.location_details:
+  title: 'LocationDetails'
+  route_name: location.location_details
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99

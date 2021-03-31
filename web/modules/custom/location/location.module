@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains location.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function location_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the location module.
+    case 'help.page.location':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Display the date based on location') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function location_theme() {
+  return [
+    'display_location' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
